@@ -1,31 +1,106 @@
 *{
 
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-position: relative;
-}
-#navbar{
-
-    width: 100%;
-    height: 5rem;
-    background-color: #cccccc;
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-align-items: center;
-}
-.right-link-group , .left-link-group{
- display: flex;
-flex-direction: row;
-justify-content: flex-start;
-align-items: center;
-}
-.navbar-brand{
-color: #ffffff;
-width: 20%;
-height: 100%;
-background-color: rgb(0,0,52.34);
-
-}
- 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    }
+    #navbar{
+    
+        width: 100%;
+        height: 5rem;
+        background-color:#ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    }
+    .right-link-group , .left-link-group{
+     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5in;
+    }
+    .navbar-brand{
+    color: #ffffff;
+    width: 20%;
+    height: 100%;
+    background-color: #1a54e7;
+    text-align: right;
+    line-height: 4.5rem;
+    font-family: Arial;
+    
+    }
+    .right-link , .left-link {
+    margin: 0.2in;
+    list-style: none;
+    
+    }
+    .right-link-group{
+    margin-left: 3in;
+    font-family: Arial;
+    color: #1a54e7
+    } 
+    .left-link{
+        font-family: Arial;
+    }
+    
+    #header{
+        width: 100%;
+        height: calc(100vh - 5rem);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #header h3{
+        color: #fff;
+        top: -150px;
+    }
+    .qali {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+      margin-top:80px;
+    }
+    #footer{
+            width:100%;
+            height:300px;
+            background-color:#1a54e7;
+    }
+    .div13{
+        width:100%;
+        height:300px;
+        background-color:#1a54e7;
+    }
+    .div16{
+        padding-top:70px;
+        position: relative;
+        text-align: center;
+    }
+    .div14{
+        background-color:white;
+        position: relative;
+        height:40px;
+        text-align: center;
+        }
+        .div15{
+        margin-top:20px;
+        }
+        .span7{
+            display: block;
+        }
+        .span8{
+            color:gray;
+        }
+        .h15{
+            color: white;
+            font-size: 40px;
+            }
+            .span6{
+                color: white;
+            font-size: 20px;
+            }
