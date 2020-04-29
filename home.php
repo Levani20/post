@@ -3,11 +3,25 @@
 <head>
 	<title>PHP Test</title>
 	<link rel="stylesheet" href="home.css">
-
+	<link rel="stylesheet" href="db.php">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+<?php
+$conn = new PDO('mysql:host=localhost; dbname=posts', 'root', '');
+
+?>
+
+<?php
+$statement = $conn->prepare('SELECT * FROM posts LIMIT 10');
+$statement->execute();
+$data = $statement->fetchAll();
+
+echo '<pre>';
+print_r($data);
+echo '</pre>';
+?>
 
 <body>
 
